@@ -11,15 +11,15 @@ using namespace std;
 
 Mat img;
 VideoCapture cap(0);
-vector<vector<int>> newPoints;  // to store all points
+vector<vector<int>> newPoints;  
 
-/////////////////////  COLOR VALUES ////////////////////////////////
-// hmin, smin, vmin hmax, smax, vmax
-vector<vector<int>> myColors{ {124,48,117,143,170,255}, // Purple
-                              {68,72,156,102,126,255} };// Green
-vector<Scalar> myColorValues{ {255,0,255},		// Purple
-                              {0,255,0} };// Green
-////////////////////////////////////////////////////////////////////
+
+
+vector<vector<int>> myColors{ {124,48,117,143,170,255}, 
+                              {68,72,156,102,126,255} };
+vector<Scalar> myColorValues{ {255,0,255},		
+                              {0,255,0} };
+
 
 Point getContours(Mat image) {
 
