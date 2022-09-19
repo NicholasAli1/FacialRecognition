@@ -8,7 +8,7 @@ using namespace cv;
 
 int main(int argc, char** argv) {
     Mat image;
-    image = imread("E:/Programming/C++/Computer Vision/lena.png", IMREAD_COLOR);
+    image = imread("/Users/nicholas/Documents/Programming/C++/ComputerVisionTest/lenna.png", IMREAD_COLOR);
     if (!image.data) {
         printf("No image data \n");
         return -1;
